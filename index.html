@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaClone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <h1>InstaClone</h1>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-items">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-plus-square" id="create-post"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="wrapper">
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story">
+                    <img src="https://via.placeholder.com/50" alt="user">
+                    <p>Your Story</p>
+                </div>
+            </div>
+
+            <!-- Posts -->
+            <div class="posts">
+                <!-- Posts will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="https://via.placeholder.com/60" alt="user">
+                </div>
+                <div>
+                    <p class="username">user123</p>
+                    <p class="sub-text">John Doe</p>
+                </div>
+            </div>
+            
+            <div class="suggestions">
+                <p class="suggestion-title">Suggestions for you</p>
+                <!-- Suggested users will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Post Modal -->
+    <div class="modal" id="create-post-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create New Post</h2>
+            <form id="post-form">
+                <input type="file" id="post-image" accept="image/*" required>
+                <textarea id="post-caption" placeholder="Write a caption..."></textarea>
+                <button type="submit">Share</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
